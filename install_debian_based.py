@@ -6,7 +6,7 @@ a = 0 #Placeholder variable so that 'input' below will work as I want it to.
 os.system("sudo apt install subversion") #Installs Subversion, if it isn't already installed.
 os.system("cd ~/.steam/steam/steamapps/sourcemods") #Changes the current working directory to the sourcemods/ folder.
 
-os.system("svn checkout https://svn.openfortress.fun/svn/open_fortress/ open_fortress") #Clones, or "checkouts" the Open Fortress files from the SVN repository, into "open_fortress" in the sourcemods/ directory.
+os.system("svn checkout https://svn.openfortress.fun/svn/open_fortress/ ~/.steam/steam/steamapps/sourcemods/open_fortress") #Clones, or "checkouts" the Open Fortress files from the SVN repository, into "open_fortress" in the sourcemods/ directory.
 
 os.system("steam steam://rungameid/243750")
 time.sleep(5)
