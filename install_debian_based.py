@@ -41,4 +41,4 @@ time.sleep("1")
 
 time.sleep("1")
 
-os.system("steam steam://rungameid/243750 -game "~/.local/share/Steam/steamapps/sourcemods/open_fortress" "-secure -steam")
+os.system("steam steam://rungameid/243750 -game ~/.local/share/Steam/steamapps/sourcemods/open_fortress -secure -steam")
