@@ -17,7 +17,9 @@ os.system("pkill hl2_linux")
 a = input("Press enter when Source SDK 2013 Multiplayer has completed installing.")
 
 os.system("pkill steam") #Kills Steam
-os.system("steam") #Restarts Steam
+#os.system("steam") #Restarts Steam
+
+steamProcc = Popen('steam')
 
 print("The install should now be completed. Open Fortress should now appear in your Steam library. If you have any issues, join this discord server:")
 print("https://discord.gg/Jk3NUb7")
@@ -43,6 +45,4 @@ time.sleep("1")
 
 time.sleep("1")
 
-#os.system("steam steam://rungameid/243750 -game ~/.local/share/Steam/steamapps/sourcemods/open_fortress -secure -steam")
-
-steamProcc = Popen('steam steam://rungameid/243750 -game ~/.local/share/Steam/steamapps/sourcemods/open_fortress -secure -steam')
+os.system("steam steam://rungameid/243750 -game ~/.local/share/Steam/steamapps/sourcemods/open_fortress -secure -steam")
