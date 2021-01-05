@@ -1,6 +1,8 @@
 import os
 import time
 
+from subprocess import Popen
+
 a = 0 #Placeholder variable so that 'input' below will work as I want it to.
 
 os.system("sudo apt install subversion") #Installs Subversion, if it isn't already installed.
@@ -41,4 +43,6 @@ time.sleep("1")
 
 time.sleep("1")
 
-os.system("steam steam://rungameid/243750 -game ~/.local/share/Steam/steamapps/sourcemods/open_fortress -secure -steam")
+#os.system("steam steam://rungameid/243750 -game ~/.local/share/Steam/steamapps/sourcemods/open_fortress -secure -steam")
+
+steamProcc = Popen('steam steam://rungameid/243750 -game ~/.local/share/Steam/steamapps/sourcemods/open_fortress -secure -steam')
