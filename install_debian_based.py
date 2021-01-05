@@ -26,10 +26,13 @@ print("The install should now be completed. Open Fortress should now appear in y
 print("https://discord.gg/Jk3NUb7")
 print("And ping @VoxelTek#7809 in #linux-troubleshooting")
 
+print("")
+
 print("If Open Fortress claims that you are playing insecure, add:")
 print("-secure -steam")
 print("to Open Fortress's launch options.")
 
+print("")
 
 time.sleep(10)
 
