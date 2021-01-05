@@ -10,7 +10,8 @@ os.system("cd ~/.steam/steam/steamapps/sourcemods") #Changes the current working
 
 os.system("svn checkout https://svn.openfortress.fun/svn/open_fortress/ ~/.steam/steam/steamapps/sourcemods/open_fortress") #Clones, or "checkouts" the Open Fortress files from the SVN repository, into "open_fortress" in the sourcemods/ directory.
 
-os.system("steam steam://rungameid/243750")
+#os.system("steam steam://rungameid/243750")
+steamProcc = Popen('steam steam://rungameid/243750')
 time.sleep(5)
 os.system("pkill hl2_linux")
 
@@ -30,19 +31,19 @@ print("-secure -steam")
 print("to Open Fortress's launch options.")
 
 
-time.sleep("10")
+time.sleep(10)
 
 print("Auto-launching Open Fortress in...")
-time.sleep("2")
-
-time.sleep("1")
-
-time.sleep("1")
-
-time.sleep("1")
-
-time.sleep("1")
-
-time.sleep("1")
+time.sleep(2)
+print("5")
+time.sleep(1)
+print("4")
+time.sleep(1)
+print("3")
+time.sleep(1)
+print("2")
+time.sleep(1)
+print("1")
+time.sleep(1)
 
 os.system("steam steam://rungameid/243750 -game ~/.local/share/Steam/steamapps/sourcemods/open_fortress -secure -steam")
